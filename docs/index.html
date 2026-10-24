@@ -380,7 +380,7 @@
           </div>
 
           <p id="cd-total-summary" class="text-xs sm:text-sm text-yellow-100 font-medium mt-3.5">
-            Zbývá celkem: <span id="cd-total-hours" class="font-bold text-[#FFD700]">...</span> hodin (25. 10. 2026 v 19:00 SEČ, Praha)
+            Zbývá celkem: <span id="cd-total-hours" class="font-bold text-[#FFD700]">...</span> hodin (25. 10. 2026 v 19:00, Praha)
           </p>
         </div>
 
@@ -809,8 +809,7 @@
       }
 
       // 2. Live countdown to 25.10.2026 19:00 Europe/Prague time
-      // Central European Time (CET, UTC+1) takes effect on 25.10.2026 at 03:00
-      const targetTime = new Date('2026-10-25T19:00:00+01:00').getTime();
+      const targetTime = new Date('2026-10-25T19:00:00+02:00').getTime();
 
       const hoursEl = document.getElementById('cd-hours');
       const minutesEl = document.getElementById('cd-minutes');
