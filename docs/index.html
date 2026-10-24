@@ -7,10 +7,10 @@
   <meta name="description" content="Oficiální internetový portál fiktivního státu Mirka Kamilová (MK).">
   <link rel="icon" type="image/png" href="logo.png">
 
-  <!-- Google Fonts: Roboto (M3 Core), Montserrat (M3 Display Titles), Inter with latin-ext support -->
+  <!-- Google Fonts: Roboto (M3 Core), Montserrat (M3 Display Titles), JetBrains Mono with latin-ext support -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600;700;800&family=Montserrat:wght@600;700;800;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
   <!-- Official Google Material Symbols Rounded (Material 3 Icon Library) -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -60,6 +60,7 @@
           fontFamily: {
             heading: ['Montserrat', 'Roboto', 'system-ui', '-apple-system', 'sans-serif'],
             body: ['Roboto', 'system-ui', '-apple-system', 'Segoe UI', 'sans-serif'],
+            badge: ['JetBrains Mono', 'monospace'],
           },
           boxShadow: {
             'm3-elevation-1': '0px 1px 3px 1px rgba(0, 0, 0, 0.06), 0px 1px 2px 0px rgba(0, 0, 0, 0.10)',
@@ -82,6 +83,10 @@
 
     h1, h2, h3, .font-heading {
       font-family: 'Montserrat', 'Roboto', system-ui, -apple-system, sans-serif;
+    }
+
+    .font-badge {
+      font-family: 'JetBrains Mono', monospace !important;
     }
 
     .material-symbols-rounded {
@@ -209,7 +214,7 @@
               <span class="hidden sm:inline">Zprávy</span>
             </a>
             <a href="#postavy" class="px-3.5 sm:px-4 py-2 rounded-full text-[#1A1C1E] dark:text-[#E2E2E9] hover:bg-[#E5E2E9] dark:hover:bg-[#282A2F] active:bg-[#D8E2FF] dark:active:bg-[#004785] transition-all duration-150 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#005AC1] flex items-center gap-1.5">
-              <span class="material-symbols-rounded text-lg text-[#715B2E] dark:text-[#FFDEA3]">group</span>
+              <span class="material-symbols-rounded text-lg text-[#FFD700] dark:text-[#FFDEA3]">group</span>
               <span class="hidden sm:inline">Postavy</span>
             </a>
           </nav>
@@ -497,7 +502,7 @@
                 >
               </div>
               <div>
-                <span class="inline-block text-[11px] font-bold uppercase tracking-wider text-[#005AC1] dark:text-[#A8C7FA] px-2.5 py-0.5 rounded-md bg-[#D8E2FF]/60 dark:bg-[#003370]/60 mb-1">Hlavní postava státu</span>
+                <span class="inline-block text-[11px] font-bold font-badge uppercase tracking-wider text-[#005AC1] dark:text-[#A8C7FA] px-2.5 py-0.5 rounded-md bg-[#D8E2FF]/60 dark:bg-[#003370]/60 mb-1">Hlavní postava státu</span>
                 <h3 class="text-xl sm:text-2xl font-bold font-heading text-[#1A1C1E] dark:text-[#E2E2E9] leading-tight">Mirka Kamilová</h3>
                 <span class="text-xs text-[#575E71] dark:text-[#C4C6D0] font-medium block mt-0.5">Bývalá vůdkyně státu</span>
               </div>
@@ -524,12 +529,12 @@
         <!-- ----------------------------------------------------------------- -->
         <!-- CARD 2: Lucie Borhyová (Highlighted Current Leader)               -->
         <!-- ----------------------------------------------------------------- -->
-        <article class="bg-gradient-to-b from-[#FFF9EE] via-white to-white dark:from-[#2A2412] dark:via-[#1E1B16] dark:to-[#1D2024] rounded-[28px] border-2 border-[#E5B800] dark:border-[#FFD700] p-6 sm:p-7 shadow-m3-elevation-2 ring-4 ring-[#FEF08A]/30 dark:ring-[#FFD700]/20 flex flex-col justify-between relative m3-card fade-in-section">
+        <article class="bg-gradient-to-b from-[#FFF9EE] via-white to-white dark:from-[#2A2412] dark:via-[#1E1B16] dark:to-[#1D2024] rounded-[28px] border-2 border-[#E5B800] dark:border-[#FFD700] p-6 sm:p-7 shadow-m3-elevation-2 ring-4 ring-[#FEF08A]/30 dark:ring-[#FFD700]/20 flex flex-col justify-between relative fade-in-section">
           
           <!-- M3 Top Honor Ribbon -->
-          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#1A1C1E] dark:bg-[#0C0E13] border-2 border-[#FFD700] text-[#FFD700] text-[11px] font-black uppercase px-4 py-1 rounded-full shadow-md tracking-wider flex items-center gap-1.5 whitespace-nowrap">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#1A1C1E] dark:bg-[#0C0E13] border-2 border-[#FFD700] text-[#FFD700] text-[11px] font-extrabold font-badge uppercase px-4 py-1 rounded-full shadow-md tracking-wider flex items-center gap-1.5 whitespace-nowrap">
             <span class="material-symbols-rounded text-sm text-[#FFD700]">workspace_premium</span>
-            <span>Soucasná vudkyne státu</span>
+            <span>Současná vůdkyně státu</span>
           </div>
 
           <div class="mt-2">
@@ -545,7 +550,7 @@
                 >
               </div>
               <div>
-                <span class="inline-block text-[11px] font-bold uppercase tracking-wider text-[#715B2E] dark:text-[#FFDEA3] px-2.5 py-0.5 rounded-md bg-[#FFDEA3]/70 dark:bg-[#4E3900]/70 mb-1">Druhá hlavní postava</span>
+                <span class="inline-block text-[11px] font-bold font-badge uppercase tracking-wider text-[#715B2E] dark:text-[#FFDEA3] px-2.5 py-0.5 rounded-md bg-[#FFDEA3]/70 dark:bg-[#4E3900]/70 mb-1">Druhá hlavní postava</span>
                 <h3 class="text-xl sm:text-2xl font-black font-heading text-[#1A1C1E] dark:text-[#E2E2E9] leading-tight">Lucie Borhyová</h3>
                 <span class="text-xs text-[#575E71] dark:text-[#C4C6D0] font-semibold block mt-0.5">Moderátorka MK Zprávy</span>
               </div>
@@ -586,7 +591,7 @@
                 >
               </div>
               <div>
-                <span class="inline-block text-[11px] font-bold uppercase tracking-wider text-[#575E71] dark:text-[#C4C6D0] px-2.5 py-0.5 rounded-md bg-[#E2E2EC] dark:bg-[#282A2F] mb-1">Vládní aparát</span>
+                <span class="inline-block text-[11px] font-bold font-badge uppercase tracking-wider text-[#575E71] dark:text-[#C4C6D0] px-2.5 py-0.5 rounded-md bg-[#E2E2EC] dark:bg-[#282A2F] mb-1">Vládní aparát</span>
                 <h3 class="text-xl sm:text-2xl font-bold font-heading text-[#1A1C1E] dark:text-[#E2E2E9] leading-tight">Filipenzoo</h3>
                 <span class="text-xs text-[#575E71] dark:text-[#C4C6D0] font-medium block mt-0.5">Asistent vedení</span>
               </div>
@@ -603,7 +608,7 @@
             <span class="text-xs font-semibold text-[#575E71] dark:text-[#C4C6D0]">Funkce v aparátu:</span>
             <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-[#DBE2F9] dark:bg-[#003370] text-[#141B2C] dark:text-[#D8E2FF] border border-[#005AC1]/30 dark:border-[#A8C7FA]/40 shadow-sm whitespace-normal text-center">
               <svg class="w-3.5 h-3.5 text-[#005AC1] dark:text-[#A8C7FA] shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                <path fill-rule="evenodd" d="M10 2a1 1 0 00-1 1v1.172A2 2 0 008 6H6a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2V8a2 2 0 00-2-2h-2a2 2 0 00-1-.828V3a1 1 0 00-1-1zm-3 7a2 2 0 114 0 2 2 0 01-4 0zm-1 6a3 3 0 016 0H6z" clip-rule="evenodd"/>
+                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"/>
               </svg>
               <span>Asistent vedení</span>
             </span>
@@ -627,7 +632,7 @@
                 >
               </div>
               <div>
-                <span class="inline-block text-[11px] font-bold uppercase tracking-wider text-emerald-800 dark:text-emerald-300 px-2.5 py-0.5 rounded-md bg-emerald-100 dark:bg-emerald-950/60 mb-1">Puvodne Josef Moravec</span>
+                <span class="inline-block text-[11px] font-bold font-badge uppercase tracking-wider text-emerald-800 dark:text-emerald-300 px-2.5 py-0.5 rounded-md bg-emerald-100 dark:bg-emerald-950/60 mb-1">Původně Josef Moravec</span>
                 <h3 class="text-xl sm:text-2xl font-bold font-heading text-[#1A1C1E] dark:text-[#E2E2E9] leading-tight">Lovec Moravec</h3>
                 <span class="text-xs text-[#575E71] dark:text-[#C4C6D0] font-medium block mt-0.5">Bydliště: Bez signálu</span>
               </div>
@@ -668,7 +673,7 @@
                 >
               </div>
               <div>
-                <span class="inline-block text-[11px] font-bold uppercase tracking-wider text-purple-800 dark:text-purple-300 px-2.5 py-0.5 rounded-md bg-purple-100 dark:bg-purple-950/60 mb-1">Mistr privítání</span>
+                <span class="inline-block text-[11px] font-bold font-badge uppercase tracking-wider text-purple-800 dark:text-purple-300 px-2.5 py-0.5 rounded-md bg-purple-100 dark:bg-purple-950/60 mb-1">Mistr přivítání</span>
                 <h3 class="text-xl sm:text-2xl font-bold font-heading text-[#1A1C1E] dark:text-[#E2E2E9] leading-tight">Petr Král</h3>
                 <span class="text-xs text-[#575E71] dark:text-[#C4C6D0] font-medium block mt-0.5">Hlasatel státu</span>
               </div>
@@ -709,7 +714,7 @@
                 >
               </div>
               <div>
-                <span class="inline-block text-[11px] font-bold uppercase tracking-wider text-rose-800 dark:text-rose-300 px-2.5 py-0.5 rounded-md bg-rose-100 dark:bg-rose-950/60 mb-1">Akustický inzenýr</span>
+                <span class="inline-block text-[11px] font-bold font-badge uppercase tracking-wider text-rose-800 dark:text-rose-300 px-2.5 py-0.5 rounded-md bg-rose-100 dark:bg-rose-950/60 mb-1">Akustický inženýr</span>
                 <h3 class="text-xl sm:text-2xl font-bold font-heading text-[#1A1C1E] dark:text-[#E2E2E9] leading-tight">Špunt</h3>
                 <span class="text-xs text-[#575E71] dark:text-[#C4C6D0] font-medium block mt-0.5">Levostranný zvuk</span>
               </div>
@@ -740,9 +745,9 @@
   </main>
 
   <!-- ========================================================================= -->
-  <!-- SECTION 4: FOOTER (Material 3 Dark Tonal Surface, High Contrast)          -->
+  <!-- SECTION 4: FOOTER (Material 3 Tonal Surface, High Contrast)             -->
   <!-- ========================================================================= -->
-  <footer class="bg-[#1A1C1E] dark:bg-[#0C0E13] text-gray-100 py-14 sm:py-18 px-4 sm:px-6 lg:px-8 border-t-4 border-[#FFD700]">
+  <footer class="bg-[#F1EDF4] dark:bg-[#0C0E13] text-[#1A1C1E] dark:text-gray-100 py-14 sm:py-18 px-4 sm:px-6 lg:px-8 border-t-4 border-[#FFD700] transition-colors duration-200">
     <div class="max-w-4xl mx-auto text-center">
       
       <!-- Small Heading: Upozornění with M3 Icon -->
@@ -754,12 +759,12 @@
       </div>
 
       <!-- Czech disclaimer: clearly readable, high contrast, always visible, no toggle -->
-      <p class="text-sm sm:text-base text-gray-200 leading-relaxed font-normal max-w-3xl mx-auto bg-white/5 p-5 sm:p-7 rounded-[24px] border border-white/10 shadow-inner">
+      <p class="text-sm sm:text-base text-[#44474F] dark:text-gray-200 leading-relaxed font-normal max-w-3xl mx-auto bg-white/70 dark:bg-white/5 p-5 sm:p-7 rounded-[24px] border border-[#C4C6D0]/80 dark:border-white/10 shadow-sm dark:shadow-inner">
         Mirka Kamilová je zcela fiktivní stát. Všechny postavy a události na tomto webu jsou vymyšlené. Postava Lucie Borhyové je inspirována skutečnou osobou, ale je zde zobrazena pouze jako fiktivní postava. Tento web není určen k tomu, aby se někomu vysmíval nebo někoho zesměšňoval. Je to jen zábava.
       </p>
 
       <!-- Copyright line -->
-      <div class="mt-8 pt-6 border-t border-gray-800 text-xs sm:text-sm text-gray-400 font-medium">
+      <div class="mt-8 pt-6 border-t border-[#C4C6D0]/60 dark:border-gray-800 text-xs sm:text-sm text-[#575E71] dark:text-gray-400 font-medium">
         © Stát Mirka Kamilová (fiktivní)
       </div>
 
