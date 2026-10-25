@@ -320,68 +320,372 @@
         </p>
       </div>
 
-      <!-- Featured Spotlight: Zlatá Mirka (M3 Featured Crimson Container) -->
-      <article class="bg-[#63070E] dark:bg-[#4E040B] border-2 border-[#FFD700]/70 rounded-[36px] p-6 sm:p-10 md:p-14 shadow-m3-elevation-3 text-center relative overflow-hidden mb-12 fade-in-section text-white">
+      <!-- Featured Spotlight: Výsledky Zlatá Mirka 2026 (M3 Featured Crimson Container) -->
+      <article class="bg-[#63070E] dark:bg-[#4E040B] border-2 border-[#FFD700]/70 rounded-[36px] p-6 sm:p-10 md:p-12 shadow-m3-elevation-3 text-center relative overflow-hidden mb-12 fade-in-section text-white">
         
         <!-- M3 Tonal Pill Ribbon -->
         <div class="inline-flex items-center gap-2 bg-[#FFD700] text-[#1F2937] text-xs sm:text-sm font-black uppercase px-5 py-1.5 rounded-full shadow-md mb-6 tracking-wider">
-          <span class="material-symbols-rounded text-sm">stars</span>
-          <span>Událost roku • Mimořádné vysílání</span>
+          <span class="material-symbols-rounded text-sm">workspace_premium</span>
+          <span>Oficiální vyhlášení • Zlatá Mirka 2026</span>
         </div>
 
-        <h3 class="text-2xl sm:text-3xl md:text-4xl font-extrabold font-heading text-white mb-3">
-          Státní slavnostní galavečer
+        <h3 class="text-2xl sm:text-3xl md:text-5xl font-black font-heading text-white mb-3">
+          Výsledky ocenění <span class="gold-shimmer-text">Zlatá Mirka</span>
         </h3>
-        <p class="text-red-100 text-sm sm:text-base max-w-xl mx-auto mb-8 font-normal leading-relaxed">
-          Tradiční předávání nejvyššího státního vyznamenání za mimořádné zásluhy v oblasti tělesné i duševní kultury.
+        <p class="text-red-100 text-sm sm:text-base md:text-lg max-w-2xl mx-auto mb-10 font-normal leading-relaxed">
+          Státní slavnostní galavečer byl úspěšně završen. Představujeme oficiální laureáty a držitele prestižních státních sošek pro rok 2026 ve všech 12 kategoriích.
         </p>
 
-        <!-- Large Centered Image with Golden Glow -->
-        <div class="my-6 flex justify-center items-center">
-          <img 
-            src="zlatamirka.png" 
-            alt="Soška ocenění Zlatá Mirka" 
-            width="1024" 
-            height="1536" 
-            class="statue-glow w-auto max-h-[300px] sm:max-h-[380px] md:max-h-[460px] object-contain mx-auto"
-          >
-        </div>
+        <!-- Winners Grid: 12 Categories with Soskas -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 sm:gap-6 text-left">
 
-        <!-- Gold Text directly below the statue with slow shimmer -->
-        <div class="mt-8 mb-6">
-          <span class="gold-shimmer-text text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black font-heading tracking-wide">
-            zlatá mirka 25.10 v 19:00
-          </span>
-        </div>
-
-        <!-- Live Countdown Card (M3 Time-Picker Aesthetic) -->
-        <div class="mt-6 inline-block bg-black/45 dark:bg-black/60 border border-[#FFD700]/50 rounded-[28px] px-5 py-5 sm:px-8 sm:py-6 max-w-xl shadow-inner">
-          <div class="flex items-center justify-center gap-2 text-xs sm:text-sm text-[#FFD700] font-bold uppercase tracking-wider mb-3">
-            <span class="material-symbols-rounded text-[#FFD700] text-base animate-pulse">schedule</span>
-            <span>Živý odpočet do zahájení galavečera</span>
-          </div>
-
-          <!-- Segmented Display: Hours, Minutes, Seconds -->
-          <div id="countdown-timer" class="flex flex-wrap items-center justify-center gap-3 sm:gap-4 text-white">
-            <div class="flex flex-col items-center bg-black/60 dark:bg-black/80 px-4 py-2.5 sm:px-5 sm:py-3 rounded-[20px] border border-white/10 min-w-[76px] shadow-sm">
-              <span id="cd-hours" class="text-2xl sm:text-3xl font-black text-[#FFD700] font-heading">--</span>
-              <span class="text-[10px] sm:text-xs text-gray-300 uppercase font-semibold mt-0.5">Hodin</span>
+          <!-- 1. Občan Roku (Premier Award) -->
+          <div class="bg-gradient-to-b from-[#8B0000]/60 via-black/45 to-black/60 border-2 border-[#FFD700] rounded-[26px] p-5 flex flex-col justify-between shadow-lg relative group hover:-translate-y-1 transition-all duration-200 ring-2 ring-[#FFD700]/30">
+            <div>
+              <div class="relative w-full h-56 flex items-center justify-center mb-3">
+                <div class="absolute inset-0 bg-[#FFD700]/20 rounded-full filter blur-xl group-hover:bg-[#FFD700]/35 transition-all"></div>
+                <img 
+                  src="sosky/obcan-roku.png" 
+                  alt="Soška Občan Roku" 
+                  width="1024" 
+                  height="1536" 
+                  class="statue-glow h-full w-auto object-contain drop-shadow-[0_6px_14px_rgba(0,0,0,0.6)] group-hover:scale-105 transition-transform duration-300"
+                >
+              </div>
+              <span class="inline-block px-3 py-1 rounded-full bg-[#FFD700] text-[#1F2937] text-[10px] sm:text-[11px] font-black font-badge uppercase tracking-wider mb-2 shadow-sm">
+                Občan Roku
+              </span>
+              <h4 class="text-xl sm:text-2xl font-black font-heading text-white group-hover:text-[#FFD700] transition-colors leading-snug">
+                Lucie Borhyová
+              </h4>
             </div>
-            <span class="text-2xl font-bold text-[#FFD700]">:</span>
-            <div class="flex flex-col items-center bg-black/60 dark:bg-black/80 px-4 py-2.5 sm:px-5 sm:py-3 rounded-[20px] border border-white/10 min-w-[76px] shadow-sm">
-              <span id="cd-minutes" class="text-2xl sm:text-3xl font-black text-[#FFD700] font-heading">--</span>
-              <span class="text-[10px] sm:text-xs text-gray-300 uppercase font-semibold mt-0.5">Minut</span>
-            </div>
-            <span class="text-2xl font-bold text-[#FFD700]">:</span>
-            <div class="flex flex-col items-center bg-black/60 dark:bg-black/80 px-4 py-2.5 sm:px-5 sm:py-3 rounded-[20px] border border-white/10 min-w-[76px] shadow-sm">
-              <span id="cd-seconds" class="text-2xl sm:text-3xl font-black text-[#FFD700] font-heading">--</span>
-              <span class="text-[10px] sm:text-xs text-gray-300 uppercase font-semibold mt-0.5">Sekund</span>
+            <div class="mt-4 pt-3 border-t border-[#FFD700]/30 flex items-center justify-between text-xs text-[#FFD700] font-bold">
+              <span class="flex items-center gap-1">
+                <span class="material-symbols-rounded text-sm">workspace_premium</span>
+                Hlavní ocenění státu
+              </span>
             </div>
           </div>
 
-          <p id="cd-total-summary" class="text-xs sm:text-sm text-yellow-100 font-medium mt-3.5">
-            Zbývá celkem: <span id="cd-total-hours" class="font-bold text-[#FFD700]">...</span> hodin (25. 10. 2026 v 19:00, Praha)
-          </p>
+          <!-- 2. Dabér Roku -->
+          <div class="bg-black/40 dark:bg-black/55 border border-[#FFD700]/35 hover:border-[#FFD700] rounded-[26px] p-5 flex flex-col justify-between shadow-md relative group hover:-translate-y-1 transition-all duration-200">
+            <div>
+              <div class="relative w-full h-56 flex items-center justify-center mb-3">
+                <div class="absolute inset-0 bg-[#FFD700]/10 rounded-full filter blur-xl group-hover:bg-[#FFD700]/20 transition-all"></div>
+                <img 
+                  src="sosky/daber-roku.png" 
+                  alt="Soška Dabér Roku" 
+                  width="1024" 
+                  height="1536" 
+                  class="h-full w-auto object-contain drop-shadow-[0_6px_14px_rgba(0,0,0,0.6)] group-hover:scale-105 transition-transform duration-300"
+                >
+              </div>
+              <span class="inline-block px-3 py-1 rounded-full bg-[#FFD700]/20 border border-[#FFD700]/40 text-[#FFD700] text-[10px] sm:text-[11px] font-bold font-badge uppercase tracking-wider mb-2">
+                Dabér Roku
+              </span>
+              <h4 class="text-lg sm:text-xl font-black font-heading text-white group-hover:text-[#FFD700] transition-colors leading-snug">
+                Filipenzoo
+              </h4>
+            </div>
+            <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-xs text-red-200/80 font-medium">
+              <span class="flex items-center gap-1">
+                <span class="material-symbols-rounded text-sm text-[#FFD700]">military_tech</span>
+                Vítěz kategorie
+              </span>
+            </div>
+          </div>
+
+          <!-- 3. Imigrant Roku -->
+          <div class="bg-black/40 dark:bg-black/55 border border-[#FFD700]/35 hover:border-[#FFD700] rounded-[26px] p-5 flex flex-col justify-between shadow-md relative group hover:-translate-y-1 transition-all duration-200">
+            <div>
+              <div class="relative w-full h-56 flex items-center justify-center mb-3">
+                <div class="absolute inset-0 bg-[#FFD700]/10 rounded-full filter blur-xl group-hover:bg-[#FFD700]/20 transition-all"></div>
+                <img 
+                  src="sosky/imigrant-roku.png" 
+                  alt="Soška Imigrant Roku" 
+                  width="941" 
+                  height="1672" 
+                  class="h-full w-auto object-contain drop-shadow-[0_6px_14px_rgba(0,0,0,0.6)] group-hover:scale-105 transition-transform duration-300"
+                >
+              </div>
+              <span class="inline-block px-3 py-1 rounded-full bg-[#FFD700]/20 border border-[#FFD700]/40 text-[#FFD700] text-[10px] sm:text-[11px] font-bold font-badge uppercase tracking-wider mb-2">
+                Imigrant Roku
+              </span>
+              <h4 class="text-lg sm:text-xl font-black font-heading text-white group-hover:text-[#FFD700] transition-colors leading-snug">
+                Mewie
+              </h4>
+            </div>
+            <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-xs text-red-200/80 font-medium">
+              <span class="flex items-center gap-1">
+                <span class="material-symbols-rounded text-sm text-[#FFD700]">military_tech</span>
+                Vítěz kategorie
+              </span>
+            </div>
+          </div>
+
+          <!-- 4. Spáč Roku -->
+          <div class="bg-black/40 dark:bg-black/55 border border-[#FFD700]/35 hover:border-[#FFD700] rounded-[26px] p-5 flex flex-col justify-between shadow-md relative group hover:-translate-y-1 transition-all duration-200">
+            <div>
+              <div class="relative w-full h-56 flex items-center justify-center mb-3">
+                <div class="absolute inset-0 bg-[#FFD700]/10 rounded-full filter blur-xl group-hover:bg-[#FFD700]/20 transition-all"></div>
+                <img 
+                  src="sosky/spac-roku.png" 
+                  alt="Soška Spáč Roku" 
+                  width="1024" 
+                  height="1536" 
+                  class="h-full w-auto object-contain drop-shadow-[0_6px_14px_rgba(0,0,0,0.6)] group-hover:scale-105 transition-transform duration-300"
+                >
+              </div>
+              <span class="inline-block px-3 py-1 rounded-full bg-[#FFD700]/20 border border-[#FFD700]/40 text-[#FFD700] text-[10px] sm:text-[11px] font-bold font-badge uppercase tracking-wider mb-2">
+                Spáč Roku
+              </span>
+              <h4 class="text-lg sm:text-xl font-black font-heading text-white group-hover:text-[#FFD700] transition-colors leading-snug">
+                Fary
+              </h4>
+            </div>
+            <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-xs text-red-200/80 font-medium">
+              <span class="flex items-center gap-1">
+                <span class="material-symbols-rounded text-sm text-[#FFD700]">military_tech</span>
+                Vítěz kategorie
+              </span>
+            </div>
+          </div>
+
+          <!-- 5. Nejchytřejší Člověk -->
+          <div class="bg-black/40 dark:bg-black/55 border border-[#FFD700]/35 hover:border-[#FFD700] rounded-[26px] p-5 flex flex-col justify-between shadow-md relative group hover:-translate-y-1 transition-all duration-200">
+            <div>
+              <div class="relative w-full h-56 flex items-center justify-center mb-3">
+                <div class="absolute inset-0 bg-[#FFD700]/10 rounded-full filter blur-xl group-hover:bg-[#FFD700]/20 transition-all"></div>
+                <img 
+                  src="sosky/nejchytrejsi-clovek.png" 
+                  alt="Soška Nejchytřejší Člověk" 
+                  width="1024" 
+                  height="1535" 
+                  class="h-full w-auto object-contain drop-shadow-[0_6px_14px_rgba(0,0,0,0.6)] group-hover:scale-105 transition-transform duration-300"
+                >
+              </div>
+              <span class="inline-block px-3 py-1 rounded-full bg-[#FFD700]/20 border border-[#FFD700]/40 text-[#FFD700] text-[10px] sm:text-[11px] font-bold font-badge uppercase tracking-wider mb-2">
+                Nejchytřejší Člověk
+              </span>
+              <h4 class="text-lg sm:text-xl font-black font-heading text-white group-hover:text-[#FFD700] transition-colors leading-snug">
+                Petráčková Zuzana
+              </h4>
+            </div>
+            <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-xs text-red-200/80 font-medium">
+              <span class="flex items-center gap-1">
+                <span class="material-symbols-rounded text-sm text-[#FFD700]">military_tech</span>
+                Vítěz kategorie
+              </span>
+            </div>
+          </div>
+
+          <!-- 6. Nejhloupější Člověk -->
+          <div class="bg-black/40 dark:bg-black/55 border border-[#FFD700]/35 hover:border-[#FFD700] rounded-[26px] p-5 flex flex-col justify-between shadow-md relative group hover:-translate-y-1 transition-all duration-200">
+            <div>
+              <div class="relative w-full h-56 flex items-center justify-center mb-3">
+                <div class="absolute inset-0 bg-[#FFD700]/10 rounded-full filter blur-xl group-hover:bg-[#FFD700]/20 transition-all"></div>
+                <img 
+                  src="sosky/nejhloupejsi-clovek.png" 
+                  alt="Soška Nejhloupější Člověk" 
+                  width="1024" 
+                  height="1536" 
+                  class="h-full w-auto object-contain drop-shadow-[0_6px_14px_rgba(0,0,0,0.6)] group-hover:scale-105 transition-transform duration-300"
+                >
+              </div>
+              <span class="inline-block px-3 py-1 rounded-full bg-[#FFD700]/20 border border-[#FFD700]/40 text-[#FFD700] text-[10px] sm:text-[11px] font-bold font-badge uppercase tracking-wider mb-2">
+                Nejhloupější Člověk
+              </span>
+              <h4 class="text-lg sm:text-xl font-black font-heading text-white group-hover:text-[#FFD700] transition-colors leading-snug">
+                Špunt
+              </h4>
+            </div>
+            <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-xs text-red-200/80 font-medium">
+              <span class="flex items-center gap-1">
+                <span class="material-symbols-rounded text-sm text-[#FFD700]">military_tech</span>
+                Vítěz kategorie
+              </span>
+            </div>
+          </div>
+
+          <!-- 7. Nejvtipnější Člověk -->
+          <div class="bg-black/40 dark:bg-black/55 border border-[#FFD700]/35 hover:border-[#FFD700] rounded-[26px] p-5 flex flex-col justify-between shadow-md relative group hover:-translate-y-1 transition-all duration-200">
+            <div>
+              <div class="relative w-full h-56 flex items-center justify-center mb-3">
+                <div class="absolute inset-0 bg-[#FFD700]/10 rounded-full filter blur-xl group-hover:bg-[#FFD700]/20 transition-all"></div>
+                <img 
+                  src="sosky/nejvtipnejsi-clovek.png" 
+                  alt="Soška Nejvtipnější Člověk" 
+                  width="1024" 
+                  height="1536" 
+                  class="h-full w-auto object-contain drop-shadow-[0_6px_14px_rgba(0,0,0,0.6)] group-hover:scale-105 transition-transform duration-300"
+                >
+              </div>
+              <span class="inline-block px-3 py-1 rounded-full bg-[#FFD700]/20 border border-[#FFD700]/40 text-[#FFD700] text-[10px] sm:text-[11px] font-bold font-badge uppercase tracking-wider mb-2">
+                Nejvtipnější Člověk
+              </span>
+              <h4 class="text-lg sm:text-xl font-black font-heading text-white group-hover:text-[#FFD700] transition-colors leading-snug">
+                Playplak
+              </h4>
+            </div>
+            <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-xs text-red-200/80 font-medium">
+              <span class="flex items-center gap-1">
+                <span class="material-symbols-rounded text-sm text-[#FFD700]">military_tech</span>
+                Vítěz kategorie
+              </span>
+            </div>
+          </div>
+
+          <!-- 8. Největší Diva -->
+          <div class="bg-black/40 dark:bg-black/55 border border-[#FFD700]/35 hover:border-[#FFD700] rounded-[26px] p-5 flex flex-col justify-between shadow-md relative group hover:-translate-y-1 transition-all duration-200">
+            <div>
+              <div class="relative w-full h-56 flex items-center justify-center mb-3">
+                <div class="absolute inset-0 bg-[#FFD700]/10 rounded-full filter blur-xl group-hover:bg-[#FFD700]/20 transition-all"></div>
+                <img 
+                  src="sosky/nejvetsi-diva.png" 
+                  alt="Soška Největší Diva" 
+                  width="941" 
+                  height="1672" 
+                  class="h-full w-auto object-contain drop-shadow-[0_6px_14px_rgba(0,0,0,0.6)] group-hover:scale-105 transition-transform duration-300"
+                >
+              </div>
+              <span class="inline-block px-3 py-1 rounded-full bg-[#FFD700]/20 border border-[#FFD700]/40 text-[#FFD700] text-[10px] sm:text-[11px] font-bold font-badge uppercase tracking-wider mb-2">
+                Největší Diva
+              </span>
+              <h4 class="text-lg sm:text-xl font-black font-heading text-white group-hover:text-[#FFD700] transition-colors leading-snug">
+                Maju
+              </h4>
+            </div>
+            <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-xs text-red-200/80 font-medium">
+              <span class="flex items-center gap-1">
+                <span class="material-symbols-rounded text-sm text-[#FFD700]">military_tech</span>
+                Vítěz kategorie
+              </span>
+            </div>
+          </div>
+
+          <!-- 9. Největší Kecal -->
+          <div class="bg-black/40 dark:bg-black/55 border border-[#FFD700]/35 hover:border-[#FFD700] rounded-[26px] p-5 flex flex-col justify-between shadow-md relative group hover:-translate-y-1 transition-all duration-200">
+            <div>
+              <div class="relative w-full h-56 flex items-center justify-center mb-3">
+                <div class="absolute inset-0 bg-[#FFD700]/10 rounded-full filter blur-xl group-hover:bg-[#FFD700]/20 transition-all"></div>
+                <img 
+                  src="sosky/nejvetsi-kecal.png" 
+                  alt="Soška Největší Kecal" 
+                  width="1024" 
+                  height="1535" 
+                  class="h-full w-auto object-contain drop-shadow-[0_6px_14px_rgba(0,0,0,0.6)] group-hover:scale-105 transition-transform duration-300"
+                >
+              </div>
+              <span class="inline-block px-3 py-1 rounded-full bg-[#FFD700]/20 border border-[#FFD700]/40 text-[#FFD700] text-[10px] sm:text-[11px] font-bold font-badge uppercase tracking-wider mb-2">
+                Největší Kecal
+              </span>
+              <h4 class="text-lg sm:text-xl font-black font-heading text-white group-hover:text-[#FFD700] transition-colors leading-snug">
+                Petr Král
+              </h4>
+            </div>
+            <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-xs text-red-200/80 font-medium">
+              <span class="flex items-center gap-1">
+                <span class="material-symbols-rounded text-sm text-[#FFD700]">military_tech</span>
+                Vítěz kategorie
+              </span>
+            </div>
+          </div>
+
+          <!-- 10. Největší Salťák -->
+          <div class="bg-black/40 dark:bg-black/55 border border-[#FFD700]/35 hover:border-[#FFD700] rounded-[26px] p-5 flex flex-col justify-between shadow-md relative group hover:-translate-y-1 transition-all duration-200">
+            <div>
+              <div class="relative w-full h-56 flex items-center justify-center mb-3">
+                <div class="absolute inset-0 bg-[#FFD700]/10 rounded-full filter blur-xl group-hover:bg-[#FFD700]/20 transition-all"></div>
+                <img 
+                  src="sosky/nejvetsi-saltak.png" 
+                  alt="Soška Největší Salťák" 
+                  width="1024" 
+                  height="1536" 
+                  class="h-full w-auto object-contain drop-shadow-[0_6px_14px_rgba(0,0,0,0.6)] group-hover:scale-105 transition-transform duration-300"
+                >
+              </div>
+              <span class="inline-block px-3 py-1 rounded-full bg-[#FFD700]/20 border border-[#FFD700]/40 text-[#FFD700] text-[10px] sm:text-[11px] font-bold font-badge uppercase tracking-wider mb-2">
+                Největší Salťák
+              </span>
+              <h4 class="text-lg sm:text-xl font-black font-heading text-white group-hover:text-[#FFD700] transition-colors leading-snug">
+                Deelousek
+              </h4>
+            </div>
+            <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-xs text-red-200/80 font-medium">
+              <span class="flex items-center gap-1">
+                <span class="material-symbols-rounded text-sm text-[#FFD700]">military_tech</span>
+                Vítěz kategorie
+              </span>
+            </div>
+          </div>
+
+          <!-- 11. Největší Ego -->
+          <div class="bg-black/40 dark:bg-black/55 border border-[#FFD700]/35 hover:border-[#FFD700] rounded-[26px] p-5 flex flex-col justify-between shadow-md relative group hover:-translate-y-1 transition-all duration-200">
+            <div>
+              <div class="relative w-full h-56 flex items-center justify-center mb-3">
+                <div class="absolute inset-0 bg-[#FFD700]/10 rounded-full filter blur-xl group-hover:bg-[#FFD700]/20 transition-all"></div>
+                <img 
+                  src="sosky/nejvetsi-ego.png" 
+                  alt="Soška Největší Ego" 
+                  width="1024" 
+                  height="1536" 
+                  class="h-full w-auto object-contain drop-shadow-[0_6px_14px_rgba(0,0,0,0.6)] group-hover:scale-105 transition-transform duration-300"
+                >
+              </div>
+              <span class="inline-block px-3 py-1 rounded-full bg-[#FFD700]/20 border border-[#FFD700]/40 text-[#FFD700] text-[10px] sm:text-[11px] font-bold font-badge uppercase tracking-wider mb-2">
+                Největší Ego
+              </span>
+              <h4 class="text-lg sm:text-xl font-black font-heading text-white group-hover:text-[#FFD700] transition-colors leading-snug">
+                Lovec Moravec
+              </h4>
+            </div>
+            <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-xs text-red-200/80 font-medium">
+              <span class="flex items-center gap-1">
+                <span class="material-symbols-rounded text-sm text-[#FFD700]">military_tech</span>
+                Vítěz kategorie
+              </span>
+            </div>
+          </div>
+
+          <!-- 12. Nonstop Online -->
+          <div class="bg-black/40 dark:bg-black/55 border border-[#FFD700]/35 hover:border-[#FFD700] rounded-[26px] p-5 flex flex-col justify-between shadow-md relative group hover:-translate-y-1 transition-all duration-200">
+            <div>
+              <div class="relative w-full h-56 flex items-center justify-center mb-3">
+                <div class="absolute inset-0 bg-[#FFD700]/10 rounded-full filter blur-xl group-hover:bg-[#FFD700]/20 transition-all"></div>
+                <img 
+                  src="sosky/nonstop-online.png" 
+                  alt="Soška Nonstop Online" 
+                  width="1024" 
+                  height="1536" 
+                  class="h-full w-auto object-contain drop-shadow-[0_6px_14px_rgba(0,0,0,0.6)] group-hover:scale-105 transition-transform duration-300"
+                >
+              </div>
+              <span class="inline-block px-3 py-1 rounded-full bg-[#FFD700]/20 border border-[#FFD700]/40 text-[#FFD700] text-[10px] sm:text-[11px] font-bold font-badge uppercase tracking-wider mb-2">
+                Nonstop Online
+              </span>
+              <h4 class="text-lg sm:text-xl font-black font-heading text-white group-hover:text-[#FFD700] transition-colors leading-snug">
+                Devvie
+              </h4>
+            </div>
+            <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-xs text-red-200/80 font-medium">
+              <span class="flex items-center gap-1">
+                <span class="material-symbols-rounded text-sm text-[#FFD700]">military_tech</span>
+                Vítěz kategorie
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Concluding Gala Status Bar -->
+        <div class="mt-10 pt-6 border-t border-[#FFD700]/30 flex flex-wrap items-center justify-between gap-4 text-xs sm:text-sm text-red-100/90 font-medium text-left">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-rounded text-[#FFD700] text-base">verified</span>
+            <span>Výsledky byly slavnostně potvrzeny a zapsány do státního archivu MK.</span>
+          </div>
+          <div class="text-[#FFD700] font-bold">
+            Galavečer 2026 oficiálně ukončen
+          </div>
         </div>
 
       </article>
@@ -808,44 +1112,7 @@
         });
       }
 
-      // 2. Live countdown to 25.10.2026 19:00 Europe/Prague time (CET, UTC+1)
-      const targetTime = new Date('2026-10-25T19:00:00+01:00').getTime();
-
-      const hoursEl = document.getElementById('cd-hours');
-      const minutesEl = document.getElementById('cd-minutes');
-      const secondsEl = document.getElementById('cd-seconds');
-      const totalHoursEl = document.getElementById('cd-total-hours');
-      const totalSummaryEl = document.getElementById('cd-total-summary');
-
-      function updateCountdown() {
-        const now = Date.now();
-        const diff = targetTime - now;
-
-        if (diff <= 0) {
-          if (hoursEl) hoursEl.textContent = '00';
-          if (minutesEl) minutesEl.textContent = '00';
-          if (secondsEl) secondsEl.textContent = '00';
-          if (totalHoursEl) totalHoursEl.textContent = '0';
-          if (totalSummaryEl) {
-            totalSummaryEl.innerHTML = '<span class="text-[#FFD700] font-bold">Galavečer právě probíhá nebo byl již zakončen!</span>';
-          }
-          return;
-        }
-
-        const totalHours = Math.floor(diff / (1000 * 60 * 60));
-        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-
-        if (totalHoursEl) totalHoursEl.textContent = totalHours.toLocaleString('cs-CZ');
-        if (hoursEl) hoursEl.textContent = String(totalHours).padStart(2, '0');
-        if (minutesEl) minutesEl.textContent = String(minutes).padStart(2, '0');
-        if (secondsEl) secondsEl.textContent = String(seconds).padStart(2, '0');
-      }
-
-      updateCountdown();
-      setInterval(updateCountdown, 1000);
-
-      // 3. Gentle fade/slide-in on scroll
+      // 2. Gentle fade/slide-in on scroll
       const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       const revealElements = document.querySelectorAll('.fade-in-section');
 
