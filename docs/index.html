@@ -7,12 +7,12 @@
   <meta name="description" content="Oficiální internetový portál fiktivního státu Mirka Kamilová (MK).">
   <link rel="icon" type="image/webp" href="logo.webp">
 
-  <!-- Google Fonts: Roboto (M3 Core), Montserrat (M3 Display Titles), JetBrains Mono with latin-ext support -->
+  <!-- Google Fonts: Roboto , Montserrat , JetBrains Mono with latin-ext support -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600;700;800&family=Montserrat:wght@600;700;800;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-  <!-- Official Google Material Symbols Rounded (Material 3 Icon Library) -->
+  <!-- Google Material Symbols -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
   <!-- Tailwind CSS via CDN with Class-based Dark Mode -->
@@ -23,7 +23,7 @@
       theme: {
         extend: {
           colors: {
-            // Material 3 Primary Tonal Palette
+            // Primary Tonal Palette
             'm3-primary': '#005AC1',
             'm3-primary-dark': '#A8C7FA',
             'm3-on-primary': '#FFFFFF',
@@ -32,24 +32,24 @@
             'm3-on-primary-container': '#001A41',
             'm3-on-primary-container-dark': '#D8E2FF',
 
-            // Material 3 Secondary Tonal Palette
+            // Secondary Tonal Palette
             'm3-secondary': '#575E71',
             'm3-secondary-container': '#DBE2F9',
             'm3-on-secondary-container': '#141B2C',
 
-            // Material 3 Tertiary Tonal Palette (Presidential Gold / Awards)
+            // Tertiary Tonal Palette (Presidential Gold / Awards)
             'm3-tertiary': '#715B2E',
             'm3-tertiary-container': '#FFDEA3',
             'm3-on-tertiary-container': '#261900',
             'm3-gold': '#FFD700',
 
-            // Material 3 Error / Urgent Red (News / Announcements)
+            // Error / Urgent Red (News / Announcements)
             'm3-error': '#BA1A1A',
             'm3-error-container': '#FFDAD6',
             'm3-error-container-dark': '#93000A',
             'm3-on-error-container': '#410002',
 
-            // Material 3 Neutral Surface Hierarchy (Light & Dark)
+            // Neutral Surface Hierarchy (Light & Dark)
             'm3-surface-light': '#F8F9FD',
             'm3-surface-dark': '#111318',
             'm3-surface-container-light': '#EDEDF4',
@@ -73,7 +73,7 @@
   </script>
 
   <style>
-    /* Material 3 Core Typography & Body */
+    /* Core Typography & Body */
     body {
       font-family: 'Roboto', system-ui, -apple-system, 'Segoe UI', sans-serif;
       word-break: break-word;
@@ -96,7 +96,7 @@
       vertical-align: middle;
     }
 
-    /* M3 Golden Shimmer Animation */
+    /* Golden Shimmer Animation */
     @keyframes goldShimmer {
       0% {
         background-position: -200% center;
@@ -126,7 +126,7 @@
       filter: drop-shadow(0 0 40px rgba(255, 215, 0, 0.70));
     }
 
-    /* Material 3 Card Elevation & Hover Motion */
+    /* Card Elevation & Hover Motion */
     .m3-card {
       transition: transform 200ms cubic-bezier(0.2, 0, 0, 1), box-shadow 200ms cubic-bezier(0.2, 0, 0, 1), background-color 200ms ease, border-color 200ms ease;
     }
@@ -137,14 +137,8 @@
 
     /* Gentle scroll animation reveal */
     .fade-in-section {
-      opacity: 0;
-      transform: translateY(16px);
-      transition: opacity 280ms cubic-bezier(0.2, 0, 0, 1), transform 280ms cubic-bezier(0.2, 0, 0, 1);
-      will-change: opacity, transform;
-    }
-    .fade-in-section.is-visible {
       opacity: 1;
-      transform: translateY(0);
+      transform: none;
     }
 
     /* Respect reduced motion preference */
@@ -177,19 +171,19 @@
 </head>
 <body class="bg-[#F8F9FD] dark:bg-[#111318] text-[#1A1C1E] dark:text-[#E2E2E9] flex flex-col min-h-screen">
 
-  <!-- A11y skip link (Material 3 Pill Shape) -->
+  <!-- A11y skip link  -->
   <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-[100] focus:px-5 focus:py-2.5 focus:bg-[#D8E2FF] dark:focus:bg-[#004785] focus:text-[#001A41] dark:focus:text-[#D8E2FF] focus:font-bold focus:rounded-full focus:shadow-m3-elevation-3 focus:outline-none focus:ring-2 focus:ring-[#005AC1]">
     Přejít k hlavnímu obsahu
   </a>
 
   <!-- ========================================================================= -->
-  <!-- MATERIAL 3 TOP APP BAR (Sticky Navigation with Dark/Light Mode Switcher)   -->
+  <!-- TOP APP BAR (Sticky Navigation with Dark/Light Mode Switcher) -->
   <!-- ========================================================================= -->
   <header class="sticky top-0 z-50 bg-[#F1EDF4]/95 dark:bg-[#191C20]/95 backdrop-blur-md border-b border-[#C4C6D0]/60 dark:border-[#44474F]/60 shadow-sm transition-colors duration-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16 sm:h-20">
         
-        <!-- M3 Brand Identity -->
+        <!-- Brand Identity -->
         <a href="#domu" class="flex items-center gap-3 text-[#1A1C1E] dark:text-[#E2E2E9] hover:opacity-90 transition-opacity cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#005AC1] rounded-full px-2 py-1">
           <div class="w-10 h-10 rounded-full bg-[#D8E2FF] dark:bg-[#004785] p-1 flex items-center justify-center shrink-0 border border-[#005AC1]/20 dark:border-[#A8C7FA]/30 shadow-sm">
             <img src="logo.webp" alt="Znak státu Mirka Kamilová" width="128" height="128" class="w-full h-full object-contain">
@@ -200,10 +194,10 @@
           </div>
         </a>
 
-        <!-- Right Side: Navigation Links & M3 Theme Toggle Switch -->
+        <!-- Right Side: Navigation Links & Theme Toggle Switch -->
         <div class="flex items-center gap-2 sm:gap-3">
           
-          <!-- M3 Navigation Bar Pill Chips -->
+          <!-- Navigation Bar Pill Chips -->
           <nav aria-label="Hlavní navigace" class="flex items-center gap-1 sm:gap-1.5 text-sm font-medium">
             <a href="#domu" class="px-3.5 sm:px-4 py-2 rounded-full text-[#1A1C1E] dark:text-[#E2E2E9] hover:bg-[#E5E2E9] dark:hover:bg-[#282A2F] active:bg-[#D8E2FF] dark:active:bg-[#004785] transition-all duration-150 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#005AC1] flex items-center gap-1.5">
               <span class="material-symbols-rounded text-lg text-[#005AC1] dark:text-[#A8C7FA]">home</span>
@@ -219,7 +213,7 @@
             </a>
           </nav>
 
-          <!-- M3 Dark/Light Mode Segmented Switch Button -->
+          <!-- Dark/Light Mode Segmented Switch Button -->
           <button 
             id="theme-toggle" 
             type="button" 
@@ -239,20 +233,20 @@
   <main id="main-content" class="flex-grow">
 
     <!-- ========================================================================= -->
-    <!-- SECTION 1: HERO (M3 Expressive Tonal Banner)                              -->
+    <!-- SECTION 1: HERO ( Expressive Tonal Banner) -->
     <!-- ========================================================================= -->
     <section id="domu" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 sm:pt-10 pb-12 sm:pb-16">
       
-      <!-- M3 Large Container with Rounded-3xl / 40px -->
+      <!-- Large Container with Rounded-3xl / 40px -->
       <div class="rounded-[32px] sm:rounded-[40px] bg-gradient-to-br from-[#005AC1] via-[#044DB4] to-[#003680] dark:from-[#082E66] dark:via-[#093A7F] dark:to-[#051C3F] border border-blue-400/20 dark:border-blue-400/10 text-white p-8 sm:p-12 md:p-16 shadow-m3-elevation-2 relative overflow-hidden">
         
-        <!-- M3 Decorative Ambient Surface Geometry -->
+        <!-- Decorative Ambient Surface Geometry -->
         <div class="absolute -right-20 -top-20 w-80 h-80 rounded-full bg-white/10 pointer-events-none" aria-hidden="true"></div>
         <div class="absolute -left-20 -bottom-20 w-80 h-80 rounded-full bg-black/15 pointer-events-none" aria-hidden="true"></div>
 
         <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 sm:gap-10 md:gap-14 text-center md:text-left relative z-10">
           
-          <!-- Logo in M3 Elevated Container on the Left -->
+          <!-- Logo in Elevated Container on the Left -->
           <div class="shrink-0 flex items-center justify-center p-4 sm:p-5 rounded-[28px] bg-white/15 dark:bg-black/30 border border-white/25 dark:border-white/15 shadow-lg backdrop-blur-sm">
             <img 
               src="logo.webp" 
@@ -266,7 +260,7 @@
           <!-- Typography on the Right (side by side on desktop, stacked on mobile) -->
           <div class="max-w-2xl">
             
-            <!-- M3 Suggestion Chip -->
+            <!-- Suggestion Chip -->
             <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/20 dark:bg-white/10 border border-white/30 dark:border-white/20 text-xs sm:text-sm font-semibold tracking-wide uppercase mb-4 text-white shadow-sm">
               <span class="material-symbols-rounded text-yellow-300 text-base">verified</span>
               <span>Suverénní stát Mirka Kamilová</span>
@@ -281,7 +275,7 @@
               Vítejte na centrálním vládním portálu. Místo, kde se harmonie jógy setkává s neotřesitelným státním aparátem a pravdivým zpravodajstvím.
             </p>
 
-            <!-- M3 Filled & Tonal Action Buttons -->
+            <!-- Filled & Tonal Action Buttons -->
             <div class="mt-8 flex flex-wrap items-center justify-center md:justify-start gap-4">
               <a href="#zpravy" class="inline-flex items-center justify-center px-7 py-3.5 rounded-full bg-[#FFD700] text-[#1F2937] font-bold text-sm sm:text-base shadow-m3-elevation-1 hover:bg-[#FFE082] hover:shadow-m3-elevation-2 active:scale-[0.98] transition-all duration-150 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white gap-2">
                 <span>Mimořádné zprávy</span>
@@ -301,11 +295,11 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- SECTION 2: ZPRÁVY (M3 News Surface & Spotlight)                           -->
+    <!-- SECTION 2: ZPRÁVY ( News Surface & Spotlight) -->
     <!-- ========================================================================= -->
     <section id="zpravy" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
       
-      <!-- Section Header with M3 Category Chip -->
+      <!-- Section Header with Category Chip -->
       <div class="text-center mb-10 sm:mb-14">
         <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FFDAD6] dark:bg-[#410002] text-[#410002] dark:text-[#FFDAD6] border border-[#BA1A1A]/30 text-xs sm:text-sm font-bold uppercase tracking-wider mb-3 shadow-sm">
           <span class="material-symbols-rounded text-[#BA1A1A] dark:text-[#FFB4AB] text-base">campaign</span>
@@ -320,10 +314,10 @@
         </p>
       </div>
 
-      <!-- Featured Spotlight: Výsledky Zlatá Mirka 2026 (M3 Featured Crimson Container) -->
-      <article class="bg-[#63070E] dark:bg-[#4E040B] border-2 border-[#FFD700]/70 rounded-[36px] p-6 sm:p-10 md:p-12 shadow-m3-elevation-3 text-center relative overflow-hidden mb-12 fade-in-section text-white">
+      <!-- Featured Spotlight: Výsledky Zlatá Mirka 2026 ( Featured Crimson Container) -->
+      <article class="bg-[#63070E] dark:bg-[#4E040B] border-2 border-[#FFD700]/70 rounded-[36px] p-6 sm:p-10 md:p-12 shadow-m3-elevation-3 text-center relative overflow-hidden mb-12 text-white">
         
-        <!-- M3 Tonal Pill Ribbon -->
+        <!-- Tonal Pill Ribbon -->
         <div class="inline-flex items-center gap-2 bg-[#FFD700] text-[#1F2937] text-xs sm:text-sm font-black uppercase px-5 py-1.5 rounded-full shadow-md mb-6 tracking-wider">
           <span class="material-symbols-rounded text-sm">workspace_premium</span>
           <span>Oficiální vyhlášení • Zlatá Mirka 2026</span>
@@ -690,7 +684,7 @@
 
       </article>
 
-      <!-- Extensible News Feed: M3 Elevated Surface Cards -->
+      <!-- Extensible News Feed: Elevated Surface Cards -->
       <div class="pt-4">
         <div class="flex items-center gap-2 mb-6">
           <span class="w-3 h-3 rounded-full bg-[#BA1A1A]"></span>
@@ -702,7 +696,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           
           <!-- News Card 1 -->
-          <article class="bg-white dark:bg-[#1D2024] border border-[#C4C6D0]/80 dark:border-[#44474F] rounded-[28px] p-6 shadow-m3-elevation-1 flex flex-col justify-between m3-card fade-in-section">
+          <article class="bg-white dark:bg-[#1D2024] border border-[#C4C6D0]/80 dark:border-[#44474F] rounded-[28px] p-6 shadow-m3-elevation-1 flex flex-col justify-between m3-card">
             <div>
               <div class="flex items-center justify-between text-xs text-[#575E71] dark:text-[#C4C6D0] font-medium mb-3">
                 <span class="px-3 py-1 rounded-full bg-[#F3F3FA] dark:bg-[#282A2F] text-[#001A41] dark:text-[#D8E2FF] font-semibold border border-[#C4C6D0]/50 dark:border-[#44474F]">Filmový průmysl</span>
@@ -722,7 +716,7 @@
           </article>
 
           <!-- News Card 2 -->
-          <article class="bg-white dark:bg-[#1D2024] border border-[#C4C6D0]/80 dark:border-[#44474F] rounded-[28px] p-6 shadow-m3-elevation-1 flex flex-col justify-between m3-card fade-in-section">
+          <article class="bg-white dark:bg-[#1D2024] border border-[#C4C6D0]/80 dark:border-[#44474F] rounded-[28px] p-6 shadow-m3-elevation-1 flex flex-col justify-between m3-card">
             <div>
               <div class="flex items-center justify-between text-xs text-[#575E71] dark:text-[#C4C6D0] font-medium mb-3">
                 <span class="px-3 py-1 rounded-full bg-[#F3F3FA] dark:bg-[#282A2F] text-[#001A41] dark:text-[#D8E2FF] font-semibold border border-[#C4C6D0]/50 dark:border-[#44474F]">Zdraví a sport</span>
@@ -742,7 +736,7 @@
           </article>
 
           <!-- News Card 3 -->
-          <article class="bg-white dark:bg-[#1D2024] border border-[#C4C6D0]/80 dark:border-[#44474F] rounded-[28px] p-6 shadow-m3-elevation-1 flex flex-col justify-between m3-card fade-in-section">
+          <article class="bg-white dark:bg-[#1D2024] border border-[#C4C6D0]/80 dark:border-[#44474F] rounded-[28px] p-6 shadow-m3-elevation-1 flex flex-col justify-between m3-card">
             <div>
               <div class="flex items-center justify-between text-xs text-[#575E71] dark:text-[#C4C6D0] font-medium mb-3">
                 <span class="px-3 py-1 rounded-full bg-[#F3F3FA] dark:bg-[#282A2F] text-[#001A41] dark:text-[#D8E2FF] font-semibold border border-[#C4C6D0]/50 dark:border-[#44474F]">Technologický servis</span>
@@ -767,11 +761,11 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- SECTION 3: POSTAVY (Authentic Material 3 Character Cards)                 -->
+    <!-- SECTION 3: POSTAVY (Authentic Character Cards) -->
     <!-- ========================================================================= -->
     <section id="postavy" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
       
-      <!-- Section Header with M3 Chip -->
+      <!-- Section Header with Chip -->
       <div class="text-center mb-12 sm:mb-16">
         <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#D8E2FF] dark:bg-[#004785] text-[#001A41] dark:text-[#D8E2FF] border border-[#005AC1]/20 dark:border-[#A8C7FA]/30 text-xs sm:text-sm font-bold uppercase tracking-wider mb-3 shadow-sm">
           <span class="material-symbols-rounded text-[#005AC1] dark:text-[#A8C7FA] text-base">badge</span>
@@ -790,11 +784,11 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
 
         <!-- ----------------------------------------------------------------- -->
-        <!-- CARD 1: Mirka Kamilová                                            -->
+        <!-- CARD 1: Mirka Kamilová -->
         <!-- ----------------------------------------------------------------- -->
-        <article class="bg-white dark:bg-[#1D2024] rounded-[28px] border border-[#C4C6D0]/80 dark:border-[#44474F] p-6 sm:p-7 shadow-m3-elevation-1 flex flex-col justify-between m3-card fade-in-section">
+        <article class="bg-white dark:bg-[#1D2024] rounded-[28px] border border-[#C4C6D0]/80 dark:border-[#44474F] p-6 sm:p-7 shadow-m3-elevation-1 flex flex-col justify-between m3-card">
           <div>
-            <!-- M3 Avatar Container with Custom Icon mirka.png -->
+            <!-- Avatar Container with Custom Icon mirka.png -->
             <div class="flex items-center gap-4 mb-5">
               <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-[22px] bg-[#D8E2FF] dark:bg-[#003370] border border-[#ADC6FF] dark:border-[#004785] flex items-center justify-center shrink-0 shadow-inner overflow-hidden p-1.5">
                 <img 
@@ -818,7 +812,7 @@
             </p>
           </div>
 
-          <!-- Footer M3 Assist Chip Badge (Human Silhouette Icon) -->
+          <!-- Footer Assist Chip Badge (Human Silhouette Icon) -->
           <div class="mt-6 pt-4 border-t border-[#EDEDF4] dark:border-[#282A2F] flex items-center justify-between flex-wrap gap-2">
             <span class="text-xs font-semibold text-[#575E71] dark:text-[#C4C6D0]">Stav registrace:</span>
             <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-[#F3F3FA] dark:bg-[#282A2F] text-[#1A1C1E] dark:text-[#E2E2E9] border border-[#C4C6D0] dark:border-[#44474F] shadow-sm whitespace-normal text-center">
@@ -831,18 +825,18 @@
         </article>
 
         <!-- ----------------------------------------------------------------- -->
-        <!-- CARD 2: Lucie Borhyová (Highlighted Current Leader)               -->
+        <!-- CARD 2: Lucie Borhyová (Highlighted Current Leader) -->
         <!-- ----------------------------------------------------------------- -->
         <article class="bg-gradient-to-b from-[#FFF9EE] via-white to-white dark:from-[#2A2412] dark:via-[#1E1B16] dark:to-[#1D2024] rounded-[28px] border-2 border-[#E5B800] dark:border-[#FFD700] p-6 sm:p-7 shadow-m3-elevation-2 ring-4 ring-[#FEF08A]/30 dark:ring-[#FFD700]/20 flex flex-col justify-between relative fade-in-section">
           
-          <!-- M3 Top Honor Ribbon -->
+          <!-- Top Honor Ribbon -->
           <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#1A1C1E] dark:bg-[#0C0E13] border-2 border-[#FFD700] text-[#FFD700] text-[11px] font-extrabold font-badge uppercase px-4 py-1 rounded-full shadow-md tracking-wider flex items-center gap-1.5 whitespace-nowrap">
             <span class="material-symbols-rounded text-sm text-[#FFD700]">workspace_premium</span>
             <span>Současná vůdkyně státu</span>
           </div>
 
           <div class="mt-2">
-            <!-- M3 Avatar Container with Custom Icon lucie.png -->
+            <!-- Avatar Container with Custom Icon lucie.png -->
             <div class="flex items-center gap-4 mb-5">
               <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-[22px] bg-[#FFDEA3] dark:bg-[#4E3900] border-2 border-[#E5B800] dark:border-[#FFD700] flex items-center justify-center shrink-0 shadow overflow-hidden p-1.5">
                 <img 
@@ -866,7 +860,7 @@
             </p>
           </div>
 
-          <!-- Footer M3 Filter Chip Badge (Winner) -->
+          <!-- Footer Filter Chip Badge (Winner) -->
           <div class="mt-6 pt-4 border-t border-[#FFDEA3] dark:border-[#4E3900] flex items-center justify-between flex-wrap gap-2">
             <span class="text-xs font-bold text-[#715B2E] dark:text-[#FFDEA3]">Volební mandát:</span>
             <span class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider bg-[#FFD700] text-[#1F2937] border border-amber-500 shadow-sm ring-2 ring-amber-300/40 whitespace-normal text-center">
@@ -879,11 +873,11 @@
         </article>
 
         <!-- ----------------------------------------------------------------- -->
-        <!-- CARD 3: Filipenzoo (Assistant, NOT a Candidate)                   -->
+        <!-- CARD 3: Filipenzoo (Assistant, NOT a Candidate) -->
         <!-- ----------------------------------------------------------------- -->
-        <article class="bg-white dark:bg-[#1D2024] rounded-[28px] border border-[#C4C6D0]/80 dark:border-[#44474F] p-6 sm:p-7 shadow-m3-elevation-1 flex flex-col justify-between m3-card fade-in-section">
+        <article class="bg-white dark:bg-[#1D2024] rounded-[28px] border border-[#C4C6D0]/80 dark:border-[#44474F] p-6 sm:p-7 shadow-m3-elevation-1 flex flex-col justify-between m3-card">
           <div>
-            <!-- M3 Avatar Container with Custom Icon filipenzoo.png -->
+            <!-- Avatar Container with Custom Icon filipenzoo.png -->
             <div class="flex items-center gap-4 mb-5">
               <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-[22px] bg-[#E2E2EC] dark:bg-[#2D2F39] border border-[#C6C6D0] dark:border-[#44474F] flex items-center justify-center shrink-0 shadow-inner overflow-hidden p-1.5">
                 <img 
@@ -907,7 +901,7 @@
             </p>
           </div>
 
-          <!-- Footer M3 Assistant Chip Badge -->
+          <!-- Footer Assistant Chip Badge -->
           <div class="mt-6 pt-4 border-t border-[#EDEDF4] dark:border-[#282A2F] flex items-center justify-between flex-wrap gap-2">
             <span class="text-xs font-semibold text-[#575E71] dark:text-[#C4C6D0]">Funkce v aparátu:</span>
             <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-[#DBE2F9] dark:bg-[#003370] text-[#141B2C] dark:text-[#D8E2FF] border border-[#005AC1]/30 dark:border-[#A8C7FA]/40 shadow-sm whitespace-normal text-center">
@@ -920,11 +914,11 @@
         </article>
 
         <!-- ----------------------------------------------------------------- -->
-        <!-- CARD 4: Lovec Moravec                                             -->
+        <!-- CARD 4: Lovec Moravec -->
         <!-- ----------------------------------------------------------------- -->
-        <article class="bg-white dark:bg-[#1D2024] rounded-[28px] border border-[#C4C6D0]/80 dark:border-[#44474F] p-6 sm:p-7 shadow-m3-elevation-1 flex flex-col justify-between m3-card fade-in-section">
+        <article class="bg-white dark:bg-[#1D2024] rounded-[28px] border border-[#C4C6D0]/80 dark:border-[#44474F] p-6 sm:p-7 shadow-m3-elevation-1 flex flex-col justify-between m3-card">
           <div>
-            <!-- M3 Avatar Container with Custom Icon moravec.png -->
+            <!-- Avatar Container with Custom Icon moravec.png -->
             <div class="flex items-center gap-4 mb-5">
               <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-[22px] bg-[#C4EED0] dark:bg-[#00391A] border border-[#85D99B] dark:border-[#005228] flex items-center justify-center shrink-0 shadow-inner overflow-hidden p-1.5">
                 <img 
@@ -948,7 +942,7 @@
             </p>
           </div>
 
-          <!-- Footer M3 Assist Chip Badge (Human Silhouette Icon) -->
+          <!-- Footer Assist Chip Badge (Human Silhouette Icon) -->
           <div class="mt-6 pt-4 border-t border-[#EDEDF4] dark:border-[#282A2F] flex items-center justify-between flex-wrap gap-2">
             <span class="text-xs font-semibold text-[#575E71] dark:text-[#C4C6D0]">Stav registrace:</span>
             <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-[#F3F3FA] dark:bg-[#282A2F] text-[#1A1C1E] dark:text-[#E2E2E9] border border-[#C4C6D0] dark:border-[#44474F] shadow-sm whitespace-normal text-center">
@@ -961,11 +955,11 @@
         </article>
 
         <!-- ----------------------------------------------------------------- -->
-        <!-- CARD 5: Petr Král                                                 -->
+        <!-- CARD 5: Petr Král -->
         <!-- ----------------------------------------------------------------- -->
-        <article class="bg-white dark:bg-[#1D2024] rounded-[28px] border border-[#C4C6D0]/80 dark:border-[#44474F] p-6 sm:p-7 shadow-m3-elevation-1 flex flex-col justify-between m3-card fade-in-section">
+        <article class="bg-white dark:bg-[#1D2024] rounded-[28px] border border-[#C4C6D0]/80 dark:border-[#44474F] p-6 sm:p-7 shadow-m3-elevation-1 flex flex-col justify-between m3-card">
           <div>
-            <!-- M3 Avatar Container with Custom Icon petrkral.png -->
+            <!-- Avatar Container with Custom Icon petrkral.png -->
             <div class="flex items-center gap-4 mb-5">
               <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-[22px] bg-[#E8DDFF] dark:bg-[#381E72] border border-[#CBBEFF] dark:border-[#4F378B] flex items-center justify-center shrink-0 shadow-inner overflow-hidden p-1.5">
                 <img 
@@ -989,7 +983,7 @@
             </p>
           </div>
 
-          <!-- Footer M3 Assist Chip Badge (Human Silhouette Icon) -->
+          <!-- Footer Assist Chip Badge (Human Silhouette Icon) -->
           <div class="mt-6 pt-4 border-t border-[#EDEDF4] dark:border-[#282A2F] flex items-center justify-between flex-wrap gap-2">
             <span class="text-xs font-semibold text-[#575E71] dark:text-[#C4C6D0]">Stav registrace:</span>
             <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-[#F3F3FA] dark:bg-[#282A2F] text-[#1A1C1E] dark:text-[#E2E2E9] border border-[#C4C6D0] dark:border-[#44474F] shadow-sm whitespace-normal text-center">
@@ -1002,11 +996,11 @@
         </article>
 
         <!-- ----------------------------------------------------------------- -->
-        <!-- CARD 6: Špunt                                                     -->
+        <!-- CARD 6: Špunt -->
         <!-- ----------------------------------------------------------------- -->
-        <article class="bg-white dark:bg-[#1D2024] rounded-[28px] border border-[#C4C6D0]/80 dark:border-[#44474F] p-6 sm:p-7 shadow-m3-elevation-1 flex flex-col justify-between m3-card fade-in-section">
+        <article class="bg-white dark:bg-[#1D2024] rounded-[28px] border border-[#C4C6D0]/80 dark:border-[#44474F] p-6 sm:p-7 shadow-m3-elevation-1 flex flex-col justify-between m3-card">
           <div>
-            <!-- M3 Avatar Container with Custom Icon spunt.png -->
+            <!-- Avatar Container with Custom Icon spunt.png -->
             <div class="flex items-center gap-4 mb-5">
               <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-[22px] bg-[#FFD8E4] dark:bg-[#5B112B] border border-[#FFAFD0] dark:border-[#7D2943] flex items-center justify-center shrink-0 shadow-inner overflow-hidden p-1.5">
                 <img 
@@ -1030,7 +1024,7 @@
             </p>
           </div>
 
-          <!-- Footer M3 Assist Chip Badge (Human Silhouette Icon) -->
+          <!-- Footer Assist Chip Badge (Human Silhouette Icon) -->
           <div class="mt-6 pt-4 border-t border-[#EDEDF4] dark:border-[#282A2F] flex items-center justify-between flex-wrap gap-2">
             <span class="text-xs font-semibold text-[#575E71] dark:text-[#C4C6D0]">Stav registrace:</span>
             <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-[#F3F3FA] dark:bg-[#282A2F] text-[#1A1C1E] dark:text-[#E2E2E9] border border-[#C4C6D0] dark:border-[#44474F] shadow-sm whitespace-normal text-center">
@@ -1043,16 +1037,16 @@
         </article>
 
         <!-- ----------------------------------------------------------------- -->
-        <!-- CARD 7: 9551 (Lokální inženýr)                                    -->
+        <!-- CARD 7: Devvie (Lokální inženýr) -->
         <!-- ----------------------------------------------------------------- -->
-        <article class="bg-white dark:bg-[#1D2024] rounded-[28px] border border-[#C4C6D0]/80 dark:border-[#44474F] p-6 sm:p-7 shadow-m3-elevation-1 flex flex-col justify-between m3-card fade-in-section">
+        <article class="bg-white dark:bg-[#1D2024] rounded-[28px] border border-[#C4C6D0]/80 dark:border-[#44474F] p-6 sm:p-7 shadow-m3-elevation-1 flex flex-col justify-between m3-card">
           <div>
-            <!-- M3 Avatar Container with Dynamic GitHub Avatar -->
+            <!-- Avatar Container with Dynamic GitHub Avatar -->
             <div class="flex items-center gap-4 mb-5">
               <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-[22px] bg-[#8676e8]/20 dark:bg-[#8676e8]/30 border border-[#8676e8]/40 dark:border-[#8676e8]/60 flex items-center justify-center shrink-0 shadow-inner overflow-hidden p-1.5">
                 <img 
                   src="https://github.com/9551-Dev.png" 
-                  alt="Portrét 9551" 
+                  alt="Portrét Devvie" 
                   width="256" 
                   height="256" 
                   class="w-full h-full object-cover rounded-[16px] drop-shadow"
@@ -1060,7 +1054,7 @@
               </div>
               <div>
                 <span class="inline-block text-[11px] font-bold font-badge uppercase tracking-wider text-[#8676e8] px-2.5 py-0.5 rounded-md bg-[#8676e8]/15 border border-[#8676e8]/30 mb-1">Lokální inženýr</span>
-                <h3 class="text-xl sm:text-2xl font-bold font-heading text-[#1A1C1E] dark:text-[#E2E2E9] leading-tight">9551</h3>
+                <h3 class="text-xl sm:text-2xl font-bold font-heading text-[#1A1C1E] dark:text-[#E2E2E9] leading-tight">Devvie</h3>
                 <span class="text-xs text-[#8676e8] dark:text-[#a599f2] font-semibold block mt-0.5">MK-T / MEOW</span>
               </div>
             </div>
@@ -1071,7 +1065,7 @@
             </p>
           </div>
 
-          <!-- Footer M3 Chip Badge -->
+          <!-- Footer Chip Badge -->
           <div class="mt-6 pt-4 border-t border-[#EDEDF4] dark:border-[#282A2F] flex items-center justify-between flex-wrap gap-2">
             <span class="text-xs font-semibold text-[#575E71] dark:text-[#C4C6D0]">Funkce v aparátu:</span>
             <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-[#8676e8]/15 text-[#8676e8] dark:text-[#a599f2] border border-[#8676e8]/30 shadow-sm whitespace-normal text-center">
@@ -1084,11 +1078,11 @@
         </article>
 
         <!-- ----------------------------------------------------------------- -->
-        <!-- CARD 8: Petráčková Zuzana (Učitelka českého jazyka)                -->
+        <!-- CARD 8: Petráčková Zuzana (Učitelka českého jazyka) -->
         <!-- ----------------------------------------------------------------- -->
-        <article class="bg-white dark:bg-[#1D2024] rounded-[28px] border border-[#C4C6D0]/80 dark:border-[#44474F] p-6 sm:p-7 shadow-m3-elevation-1 flex flex-col justify-between m3-card fade-in-section">
+        <article class="bg-white dark:bg-[#1D2024] rounded-[28px] border border-[#C4C6D0]/80 dark:border-[#44474F] p-6 sm:p-7 shadow-m3-elevation-1 flex flex-col justify-between m3-card">
           <div>
-            <!-- M3 Avatar Container with petrackovazuzana image -->
+            <!-- Avatar Container with petrackovazuzana image -->
             <div class="flex items-center gap-4 mb-5">
               <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-[22px] bg-teal-100 dark:bg-teal-950/60 border border-teal-300 dark:border-teal-800 flex items-center justify-center shrink-0 shadow-inner overflow-hidden p-1.5">
                 <img 
@@ -1112,7 +1106,7 @@
             </p>
           </div>
 
-          <!-- Footer M3 Chip Badge -->
+          <!-- Footer Chip Badge -->
           <div class="mt-6 pt-4 border-t border-[#EDEDF4] dark:border-[#282A2F] flex items-center justify-between flex-wrap gap-2">
             <span class="text-xs font-semibold text-[#575E71] dark:text-[#C4C6D0]">Stav registrace:</span>
             <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-teal-100 dark:bg-teal-950/60 text-teal-900 dark:text-teal-200 border border-teal-300 dark:border-teal-700 shadow-sm whitespace-normal text-center">
@@ -1131,12 +1125,12 @@
   </main>
 
   <!-- ========================================================================= -->
-  <!-- SECTION 4: FOOTER (Material 3 Tonal Surface, High Contrast)             -->
+  <!-- SECTION 4: FOOTER ( Tonal Surface, High Contrast) -->
   <!-- ========================================================================= -->
   <footer class="bg-[#F1EDF4] dark:bg-[#0C0E13] text-[#1A1C1E] dark:text-gray-100 py-14 sm:py-18 px-4 sm:px-6 lg:px-8 border-t-4 border-[#FFD700] transition-colors duration-200">
     <div class="max-w-4xl mx-auto text-center">
       
-      <!-- Small Heading: Upozornění with M3 Icon -->
+      <!-- Small Heading: Upozornění with Icon -->
       <div class="inline-flex items-center gap-2 mb-4">
         <span class="material-symbols-rounded text-[#FFD700] text-xl">info</span>
         <h3 class="text-sm sm:text-base font-extrabold uppercase tracking-widest text-[#FFD700] font-heading">
@@ -1158,13 +1152,13 @@
   </footer>
 
   <!-- ========================================================================= -->
-  <!-- JAVASCRIPT: Theme Switcher, Countdown & Scroll Animations                 -->
+  <!-- JAVASCRIPT: Theme Switcher, Countdown & Scroll Animations -->
   <!-- ========================================================================= -->
   <script>
     (function () {
       'use strict';
 
-      // 1. Material 3 Theme Manager (Default is Dark Mode)
+      // 1. Theme Manager (Default is Dark Mode)
       const themeToggleBtn = document.getElementById('theme-toggle');
       const themeIcon = document.getElementById('theme-toggle-icon');
       const themeText = document.getElementById('theme-toggle-text');
@@ -1198,27 +1192,9 @@
       const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       const revealElements = document.querySelectorAll('.fade-in-section');
 
-      if (prefersReducedMotion || !('IntersectionObserver' in window)) {
-        revealElements.forEach(function (el) {
-          el.classList.add('is-visible');
-        });
-      } else {
-        const observer = new IntersectionObserver(function (entries, obs) {
-          entries.forEach(function (entry) {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('is-visible');
-              obs.unobserve(entry.target);
-            }
-          });
-        }, {
-          threshold: 0.12,
-          rootMargin: '0px 0px -40px 0px'
-        });
-
-        revealElements.forEach(function (el) {
-          observer.observe(el);
-        });
-      }
+      revealElements.forEach(function (el) {
+        el.classList.add('is-visible');
+      });
     })();
   </script>
 
