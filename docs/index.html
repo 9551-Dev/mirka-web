@@ -808,8 +808,8 @@
         });
       }
 
-      // 2. Live countdown to 25.10.2026 19:00 Europe/Prague time
-      const targetTime = new Date('2026-10-25T19:00:00+02:00').getTime();
+      // 2. Live countdown to 25.10.2026 19:00 Europe/Prague time (CET, UTC+1)
+      const targetTime = new Date('2026-10-25T19:00:00+01:00').getTime();
 
       const hoursEl = document.getElementById('cd-hours');
       const minutesEl = document.getElementById('cd-minutes');
